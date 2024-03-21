@@ -509,7 +509,24 @@ public class CaixaSupermercados {
         hashMap.put("40451895112", "nofodemidi");
         hashMap.put("53782117823", "zobocufu");
         System.out.println(hashMap);
+// parte Mauricio Viana
+        // procurando o cliente pelo CPF
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o cpf do Cliente: ");
+        String cpf = scanner.nextLine();
 
+        if (hashMap.containsKey(cpf)) {
+            String ClienteNome = hashMap.get(cpf);
+            System.out.println("Cliente: " + ClienteNome + " cadastrado no clube de descontontos");
+        } else {
+            System.out.println("Cliente não encontrado, por favor cadastre - se ");
+
+            System.out.println(hashMap);
+
+        }
+
+    }
+}
     }
 
 }
