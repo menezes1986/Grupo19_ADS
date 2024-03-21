@@ -522,6 +522,16 @@ public class CaixaSupermercados {
             System.out.println("Cliente não encontrado, por favor cadastre - se ");
 
             System.out.println(hashMap);
+            //parte Miguel Angêlo
+            //inserir no hashmap o clinte não cadastrado
+            System.out.println("Digite o cpf a ser cadastrado: ");
+            cpf = scanner.nextLine();
+            System.out.println("Digite o nome do cliente: ");
+            String nomedoCliente = scanner.nextLine();
+
+            //inserir o cliente na lista
+            hashMap.put(cpf, nomedoCliente);
+            System.out.println("Cliente cadastrado com sucesso");
 
         }
 
